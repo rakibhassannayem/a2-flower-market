@@ -1,0 +1,14 @@
+/* shared styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+img{
+  width: 100%;
+}
+.section-title{
+  font-family: Noto-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
