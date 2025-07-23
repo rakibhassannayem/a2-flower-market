@@ -122,3 +122,37 @@ nav ul li a{
 .card button{
   width: 100%;
 }
+
+/* Flower and Plants Lover */
+.flower{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.flower .image{
+ flex: 1;
+}
+.flower img{
+  width: 100%;
+  display: block;
+}
+.flower-right{
+  flex: 1;
+}
+.flower-right h1{
+  margin-bottom: 20px;
+}
+.flower-right ul li{
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  padding-left: 1rem;
+}
+.bullet{
+  margin-right: 1rem;
+}
+
+/* Latest Deals */
+.deals{
+  margin-top: 134px;
+}
