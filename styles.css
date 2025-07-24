@@ -155,4 +155,13 @@ nav ul li a{
 /* Latest Deals */
 .deals{
   margin-top: 134px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.deals p{
+  text-align: center;
+  max-width: 888px;
 }
