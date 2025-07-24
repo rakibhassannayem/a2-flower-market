@@ -249,7 +249,7 @@ nav ul li a {
   color: white;
 }
 .mail {
-  width: 888px;
+  max-width: 888px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,15 +303,23 @@ footer nav ul li a {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  .flower {
+  .flower, footer {
     flex-direction: column;
   }
-
+  .flower-right br {
+        display: none;
+    }
   .img-main {
     grid-template-columns: repeat(1, 1fr);
   }
   .img-right {
     grid-column: 1;
     grid-row: auto;
+  }
+  .join h1{
+    font-size: 2.25rem;
+  }
+  footer{
+    gap: 20px;
   }
 }
