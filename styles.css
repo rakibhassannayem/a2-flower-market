@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: Inter;
+  box-sizing: border-box;
 }
 .container{
   max-width: 1440px;
@@ -147,6 +148,7 @@ nav ul li a{
   list-style: none;
   display: flex;
   padding-left: 1rem;
+  max-width: 520px;
 }
 .bullet{
   margin-right: 1rem;
@@ -156,6 +158,8 @@ nav ul li a{
 .deals{
   margin-top: 134px;
   margin-bottom: 120px;
+}
+.deals-top{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,4 +168,103 @@ nav ul li a{
 .deals p{
   text-align: center;
   max-width: 888px;
+  margin-bottom: 120px;
+}
+
+.img-main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.img-main .card{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  
+}
+.img-content{
+  padding: 20px;
+}
+.img-content h3, a{
+  color: white;
+}
+.img-left{
+
+}
+.left-top{
+
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./images/deal-bloom.png);
+
+}
+.left-bottom{
+
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./images/deal-ana.png);
+
+
+}
+.img-right{
+  grid-column: 2;
+  grid-row: 1 / 3;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./images/deal-zabo.png);
+}
+
+/* join section */
+.join{
+  background-image: url(./images/news-letter-bg.png);
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  gap: 23px;
+  height: 533px;
+}
+.join h1{
+  color: white;
+}
+.mail{
+  max-width: 888px;
+}
+.mail input{
+  margin: 0;
+  padding: 16px 20px;
+  width: 50%;
+  border: none;
+  outline: none;
+}
+.mail button{
+  margin: -5px;
+  padding: 16px;
+}
+
+/* footer */
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+footer p{
+  margin-top: 16px;
+  max-width: 350px;
+}
+footer nav ul{
+  display: flex;
+  flex-direction: column;
+}
+footer nav ul li a{
+  color: #6B7280;
+}
+.logo{
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
 }
