@@ -29,6 +29,14 @@
 .orange {
   color: #e95a08;
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* header styles */
 /* navbar styles */
@@ -138,9 +146,7 @@ nav ul li a {
   top: -15%;
   right: -15%;
   width: 40%;
-}
-.trust img {
-  width: 100%;
+  animation: spin 4s linear infinite;
 }
 .flower-image {
   flex: 1;
@@ -160,7 +166,7 @@ nav ul li a {
   list-style: none;
   display: flex;
   padding-left: 1rem;
-  max-width: 520px;
+  font-size: 1.9rem;
 }
 .bullet {
   margin-right: 1rem;
@@ -198,7 +204,7 @@ nav ul li a {
   align-items: center;
   text-align: center;
   border-radius: 15px;
-  min-height: 200px;
+  min-height: 240px;
 }
 .img-content {
   padding: 20px;
@@ -303,12 +309,13 @@ footer nav ul li a {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  .flower, footer {
+  .flower,
+  footer {
     flex-direction: column;
   }
   .flower-right br {
-        display: none;
-    }
+    display: none;
+  }
   .img-main {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -316,13 +323,13 @@ footer nav ul li a {
     grid-column: 1;
     grid-row: auto;
   }
-  .join h1{
+  .join h1 {
     font-size: 2.25rem;
   }
-  .mail{
+  .mail {
     max-width: 500px;
   }
-  footer{
+  footer {
     gap: 20px;
   }
 }
